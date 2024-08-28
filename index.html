@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible content"IE-edge";>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador y Desencriptador de textos</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <img class="logotipo" src="./assets/Logo.png" alt="Logo Alura Latam">
+    </header>
+
+    <main class="introducir">
+        <section class="introducir__encriptar">
+            <div class="introducir__encriptar__textarea">
+                <textarea name="encriptartexto" placeholder="Ingrese el texto aqui" class="lacajadetexto"></textarea>
+            </div>
+            <div class="introducir__encriptar__alerta">
+            <img src="./assets/exclamacion.png" alt="alerta">
+            <p>Solo letras mayusculas y sin acentos></p>
+            </div>
+            <div class="introducir__encriptar__botones">
+                <input type="button" class="introducir__encriptar__botonencriptar" value="Encriptador">
+                <input type="button" class="introducir__desencriptar__botondesencriptar" value="Desencriptador">
+            </div>
+        </section>
+        <section class="encriptar">
+            <div class="encriptar__imagen">
+                <img src="./assets/Muñeco.png" alt="Imagen de fondo">
+            </div>
+            <div class="encriptar__parrafo">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="encriptar__areacopiar">
+                <input type="button" id="cajaresultado" class="encriptar__botoncopiar" value="Copiar">
+            </div>
+            <div class="encriptar__cajaresultado">
+                <p class="encriptar__botonresultado"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Creado por Alejandro Rubio Franco</p>
+    </footer>
+    <script src="funcionalidad.js"></script>
+</body>
+</html>
